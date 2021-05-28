@@ -1,4 +1,4 @@
-javascript:(function(){javascript:(function(){javascript:(function(){(function(window) {
+(function(){javascript:(function(){javascript:(function(){(function(window) {
   var links = [{
     name: 'press i for auto clicker. Press , for U.W.@.S',
     
