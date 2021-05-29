@@ -1,6 +1,7 @@
 var MainWindowColor = '#FF32EC'
 var WindowTitleColor = '00F0FF'
 var HeaderBgColor = '#000'
+var Toggle = false
 
 (function(){javascript:(function(){javascript:(function(){(function(window) {
   var links = [{
@@ -42,8 +43,8 @@ var HeaderBgColor = '#000'
     background: MainWindowColor,
     borderThickness: 1,
     headerHeight: 32,
-    headerBackground: '#000',
-    headerTitleColor: '#00F0FF',
+    headerBackground: HeaderBgColor,
+    headerTitleColor: WindowTitleColor,
     windowTitle: 'Super Client'
   };
   var windowPosition = {
@@ -189,6 +190,10 @@ var HeaderBgColor = '#000'
 
 //auto clicker below
 
+							  
+							  
+							  
+							  
 document.addEventListener("keyup", function(event) { if (event.key === 'i') { javascript:var DELAY = 1;var autoClickerStyleElement = document.createElement("style");autoClickerStyleElement.innerHTML="*{cursor: crosshair !important;}";document.body.appendChild(autoClickerStyleElement);function addClicker(e) {if(!e.isTrusted) {return;}if(e.target.classList.contains("auto-clicker-target")) {e.target.classList.remove("auto-clicker-target");} else {e.target.classList.add("auto-clicker-target");}document.body.removeChild(autoClickerStyleElement);document.body.removeEventListener("click", addClicker);e.preventDefault();autoClick(e.target);}function autoClick(element) {if(element.classList.contains("auto-clicker-target")) {element.click();setTimeout(function(){ autoClick(element); }, DELAY);}}document.body.addEventListener("click", addClicker, 0);//To add to your bookmarks highlight the code then paste it into your bookmarks bar.
     } });
     
@@ -1361,4 +1366,4 @@ document.write("<!-- end www.htmlcommentbox.com -->");})();
     }
   }
 })(window);
-            } });})();
+            })});})();
