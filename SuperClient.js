@@ -1,4 +1,6 @@
-var test = 0
+var MainWindowColor = '#FF32EC'
+var WindowTitleColor = '00F0FF'
+var HeaderBgColor = '#000'
 
 (function(){javascript:(function(){javascript:(function(){(function(window) {
   var links = [{
@@ -37,7 +39,7 @@ var test = 0
   var props = {
     width: 550,
     height: 535,
-    background: '#FF32EC',
+    background: MainWindowColor,
     borderThickness: 1,
     headerHeight: 32,
     headerBackground: '#000',
