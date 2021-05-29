@@ -191,7 +191,7 @@ var Toggle = false
 //auto clicker below
 
 							  
-							  
+if (Toggle = true) {							  
 							  
 							  
 document.addEventListener("keyup", function(event) { if (event.key === 'i') { javascript:var DELAY = 1;var autoClickerStyleElement = document.createElement("style");autoClickerStyleElement.innerHTML="*{cursor: crosshair !important;}";document.body.appendChild(autoClickerStyleElement);function addClicker(e) {if(!e.isTrusted) {return;}if(e.target.classList.contains("auto-clicker-target")) {e.target.classList.remove("auto-clicker-target");} else {e.target.classList.add("auto-clicker-target");}document.body.removeChild(autoClickerStyleElement);document.body.removeEventListener("click", addClicker);e.preventDefault();autoClick(e.target);}function autoClick(element) {if(element.classList.contains("auto-clicker-target")) {element.click();setTimeout(function(){ autoClick(element); }, DELAY);}}document.body.addEventListener("click", addClicker, 0);//To add to your bookmarks highlight the code then paste it into your bookmarks bar.
@@ -287,9 +287,10 @@ document.addEventListener("keyup", function(event) { if (event.key === 'o') { ja
             } });
             
             /*end of event.key ; */
+}
             
             
-             document.addEventListener("keyup", function(event) { if (event.key === 'Control') { 
+             document.addEventListener("keyup", function(event) { if (event.key === 'Control' && Toggle === true) { 
             (function(window) {
   var links = [{
     name: 'press i for auto clicker. Press , for mini U.W.@.S',
@@ -659,7 +660,7 @@ html, html:hover, #tri-menu, #tri-menu > *, #tri-menu > *:hover {
             /*end of event.key / */})();
             
             
-             document.addEventListener("keyup", function(event) { if (event.key === '4') { 
+             document.addEventListener("keyup", function(event) { if (event.key === '4' && Toggle === true) { 
                javascript:!function(){const t={text:prompt("Text:","Weee!"),size:150,weight:800,speed:50};let e=[];for(let n=0;n<50;n++){let n=document.createElement("div");n.style=`width: 100%; margin: auto; pointer-events: none; user-select: none; font-weight: ${t.weight}; font-size: ${t.size}px; position: absolute; z-index: 2147483647; transition: all 10s linear; transform-origin: center center; text-align: center;`,n.textContent=t.text,document.body.appendChild(n),e.push(n)}function n(t,e){return Math.floor(Math.random()*(e-t)+t)}setInterval((()=>{const t=e[Math.floor(Math.random()*e.length)];t.style.color=function(){const t=[[150,256],[0,190],[0,30]],e=function(){const e=t.splice(Math.floor(Math.random()*t.length),1)[0];return Math.floor(Math.random()*(e[1]-e[0]))+e[0]};return"rgb("+e()+","+e()+","+e()+")"}(),t.style.opacity=Math.random()+.1,t.style.transform=`rotate(${n(0,360)}deg) translate(${n(-1e3,1e3)}px, ${n(-500,500)}px) translate3d(${n(0,200)}px,${n(0,200)}px,${n(0,200)}px) rotateX(${n(0,360)}deg) rotateY(${n(0,360)}deg) rotateZ(${n(0,360)}deg)`}),t.speed)}();
             } });
             
@@ -1187,7 +1188,7 @@ document.addEventListener("keyup", function(event) { if (event.key === '5') { ja
 
 /* comments below */
   
-             document.addEventListener("keyup", function(event) { if (event.key === '5') { 
+             document.addEventListener("keyup", function(event) { if (event.key === '5' && Toggle === true) { 
            javascript:(function(){document.write("<!-- begin wwww.htmlcommentbox.com -->\n");
 document.write(
   ' <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>\n'
@@ -1210,7 +1211,7 @@ document.write("<!-- end www.htmlcommentbox.com -->");})();
            
             /* Whats new window below */
             
-             document.addEventListener("keyup", function(event) { if (event.key === '6') { 
+             document.addEventListener("keyup", function(event) { if (event.key === '6' && Toggle === true) { 
                (function(window) {
   var links = [{
     name: 'Google',
@@ -1366,4 +1367,4 @@ document.write("<!-- end www.htmlcommentbox.com -->");})();
     }
   }
 })(window);
-            })});})();
+            } });})();
