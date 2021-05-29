@@ -2,7 +2,7 @@ var MainWindowColor = '#FF32EC'
 var WindowTitleColor = '00F0FF'
 var HeaderBgColor = '#000'
 var Toggle = false
-var test = 1
+var test = 100
 
 (function(){javascript:(function(){javascript:(function(){(function(window) {
   var links = [{
